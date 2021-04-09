@@ -14,4 +14,4 @@ def count():
 
 @app.route("/peek")
 def peek():
-    return open("/var/count/count.txt", "r").read().strip()
+    return open("/var/count/count.txt", "r").read().strip() + "\n"
